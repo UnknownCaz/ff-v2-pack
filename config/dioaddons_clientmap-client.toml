@@ -1,0 +1,5 @@
+[claims]
+	#Show land claims on the full Diorama map (Diorama's own claims setting still applies).
+	claimsOnMap = true
+	#Show land claims on the Diorama minimap (Diorama's own claims setting still applies).
+	claimsOnMinimap = true

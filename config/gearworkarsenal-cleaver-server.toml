@@ -1,0 +1,12 @@
+# Default: 40
+# Range: 10 ~ 400
+cleaverChargeTicks = 40
+# Default: 20
+# Range: 1 ~ 1000
+cleaverAirPerCharge = 20
+# Default: 30
+# Range: 10 ~ 200
+cleaverRecoveryTicks = 30
+# Default: 2.0
+# Range: 0.0 ~ 10.0
+cleaverDamagePerCharge = 2.0

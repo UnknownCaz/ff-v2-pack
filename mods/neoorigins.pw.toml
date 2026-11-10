@@ -1,0 +1,13 @@
+name = "NeoOrigins"
+filename = "neoorigins-2.2.36-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RUtQ9kfe/versions/X9Ro2Svr/neoorigins-2.2.36%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "4494110e3148956f99984a57302ec7f74f8a95af1e397528c0d1dc719e55d497b30739bbb6891de95445f332a2b07b68cd47b8ed002e796a5062884b55c4a0ad"
+
+[update]
+[update.modrinth]
+mod-id = "RUtQ9kfe"
+version = "X9Ro2Svr"

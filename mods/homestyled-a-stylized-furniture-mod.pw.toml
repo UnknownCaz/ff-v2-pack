@@ -1,0 +1,13 @@
+name = "Homestyled | A Cozy Furniture Mod"
+filename = "homestyle-1.4.0+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d540d9f78f5f87174b15bc4ac9258ff4fe321f46"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9012881
+project-id = 1657193

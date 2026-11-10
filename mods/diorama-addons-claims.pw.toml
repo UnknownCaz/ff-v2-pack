@@ -1,0 +1,13 @@
+name = "Diorama Addons: Claims"
+filename = "diorama-addons-claims-1.21.1-0.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "44fb4dcb35c5affe63f9effe7efaf1c9309ea29b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9426497
+project-id = 1778690

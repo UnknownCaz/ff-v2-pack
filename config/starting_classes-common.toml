@@ -1,0 +1,14 @@
+#Should starting mobs have a custom amount of health (defined below)?
+"Starting mobs have custom health:" = false
+#If the above is true, how much health should starting mobs have?
+# Default: 40
+# Range: 1 ~ 999
+"Starting mob custom health:" = 40
+#Should starting mobs have an infinite regeneration one effect?
+"Starting mobs infinite regen:" = false
+#Should a class be disabled from selection after it has been chosen a certain number of times?
+"Disable classes after selection:" = false
+#If the above is true, how many times can a class be chosen by players before it is disabled?
+# Default: 1
+# Range: 1 ~ 999
+"Number of times a class can be chosen before it is disabled:" = 1

@@ -1,0 +1,4 @@
+#Radius in chunks of the claims grid (10 = 21x21). The server may lower it.
+# Default: 10
+# Range: 2 ~ 64
+gridRadius = 10

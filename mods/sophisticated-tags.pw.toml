@@ -1,0 +1,13 @@
+name = "Sophisticated Tags"
+filename = "sophisticated_tags-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tfjeDeus/versions/XCplFZQ6/sophisticated_tags-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "37c35e238a416098c3daa5e02d0be0fd41d0af55daa06d6a9765da99a6c5530434cdb721c8ff7da4466c9b4fb7c783591003ea3de4257a5c18d42f2de7e9fec8"
+
+[update]
+[update.modrinth]
+mod-id = "tfjeDeus"
+version = "XCplFZQ6"

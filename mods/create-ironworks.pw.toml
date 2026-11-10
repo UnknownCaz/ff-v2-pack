@@ -1,0 +1,13 @@
+name = "Create: Ironworks"
+filename = "create_ironworks-4.0.3-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c9b0802126a463af3670143c2fd8d0cfef58d1ae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7758311
+project-id = 1068172

@@ -1,0 +1,144 @@
+#How strongly river water pushes players, animals, items and boats.
+["River Flow Speeds"]
+	#RiverFlow speed multiplier for players in the river.
+	# Default: 0.2
+	# Range: 0.0 ~ 10.0
+	playerSpeed = 0.2
+	#RiverFlow speed multiplier for animals. Note: Animals have strong swimming AI, you may want to decrease this.
+	# Default: 0.1
+	# Range: 0.0 ~ 10.0
+	animalSpeed = 0.1
+	#RiverFlow speed multiplier for water animals (squids, fishes, dolphins). Set to 0 to prevent them from being swept away when their AI pauses.
+	# Default: 0.0
+	# Range: 0.0 ~ 10.0
+	waterMobSpeed = 0.0
+	#RiverFlow speed multiplier for dropped items.
+	# Default: 0.2
+	# Range: 0.0 ~ 10.0
+	itemSpeed = 0.2
+	#RiverFlow speed multiplier for generic unidentified entities.
+	# Default: 0.1
+	# Range: 0.0 ~ 10.0
+	defaultSpeed = 0.1
+	#RiverFlow speed multiplier for Sable / Aeronautics physics ships.
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	sableShipSpeed = 2.0
+	#Flat speed boost applied to river flow when it is raining.
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	rainFlowBoost = 0.5
+	#Flat speed boost applied to river flow during a thunderstorm.
+	# Default: 0.7
+	# Range: 0.0 ~ 10.0
+	thunderstormFlowBoost = 0.7
+	#Give Minecraft's own rivers a current too, when they are the world's lowland rivers
+	#(normalRiverMode = VANILLA): along the river, toward the sea. The server works the direction
+	#out and sends it to players with the chunks, so it works in multiplayer.
+	vanillaRiverFlow = true
+	#Custom flow speeds for specific entities, or for every entity in a tag.
+	#Format: modid:name=speed or #modid:tag=speed (Example: minecraft:pig=0.8, alexmobs:bird=0.0, #minecraft:aquatic=0.0)
+	customEntitySpeeds = ["minecraft:warden=1.0"]
+
+#How rivers look, and the mod's touches on the main menu.
+[Visuals]
+	#Enable custom bubble particles in rivers.
+	enableRiverParticles = true
+	#Spawn rate of river particles. Higher = fewer particles (1 in X blocks per tick).
+	# Default: 50
+	# Range: 1 ~ 100
+	riverParticleDensity = 50
+	#Show the flowing-water texture on rivers. Off = the water looks still but still pushes entities
+	#(for compatibility with Physics Mod). Press F3+T after changing it.
+	enableRiverVisualFlow = true
+	#Enable the custom main menu panorama for Dynamic Waters.
+	customMainMenuPanorama = true
+	#Show the Dynamic Waters 'D' button on the main menu.
+	showMainMenuButton = true
+
+#How rivers and lakes are generated. Changes apply to newly generated chunks only.
+[Generation]
+	#Which long lowland rivers a world gets. Only one system can own them.
+	#DYNAMIC = Dynamic Waters' own rivers (default): wide channels with canyons and tunnels,
+	#          carrying the minecraft:river biome along their course.
+	#VANILLA = Minecraft's own rivers, exactly as in an unmodded world, with their normal
+	#          minecraft:river biome. Dynamic Waters stops touching lowland river terrain.
+	#NONE    = no lowland rivers at all. Mountain rivers are unaffected.
+	#Takes effect when a world is loaded, not while one is running.
+	#Allowed Values: DYNAMIC, VANILLA, NONE
+	normalRiverMode = "DYNAMIC"
+	#How many lowland rivers a world gets, against the default (HIGH): VERY_LOW about 1/9,
+	#LOW about 4/9, MEDIUM about 2/3, ULTRA about 1.8x, EXTREME about 2.8x, INSANE about 7x.
+	#Allowed Values: VERY_LOW, LOW, MEDIUM, HIGH, ULTRA, EXTREME, INSANE
+	normalRiverDensity = "HIGH"
+	#Terrain height (Y level) above which a lowland river runs as a closed tunnel under the ground
+	#instead of an open canyon. Higher = more open canyons, fewer tunnels. Only with normalRiverTunnels on.
+	# Default: 105.0
+	# Range: 60.0 ~ 2000.0
+	normalRiverCanyonHeight = 105.0
+	#Let lowland rivers run under high ground as closed tunnels (above normalRiverCanyonHeight).
+	#Off = no lowland tunnels at all: where the ground rises high over a lowland river it cuts an
+	#open gorge instead - steep rock walls stepping back in terraces as they rise, wider at the top
+	#than at the water, the river filling its floor. Mountain rivers end in the gorge.
+	#Off by default. New chunks only.
+	normalRiverTunnels = false
+	#Generate mountain rivers: rivers that follow the terrain's own drainage down from the mountains.
+	#Off = faster world generation.
+	enableWatersheds = true
+	#Density of mountain rivers. Mountain rivers follow the terrain's real drainage: a stream starts wherever enough terrain drains into one spot.
+	#Each step down roughly halves the streams: VERY_LOW = only the largest valleys carry a river, MEDIUM = half
+	#of the default, HIGH = default, INSANE = a dense network of small streams.
+	#Allowed Values: VERY_LOW, LOW, MEDIUM, HIGH, ULTRA, EXTREME, INSANE
+	mountainRiverDensity = "HIGH"
+	#Let mountain rivers go underground. Where one meets a lowland river (or the sea) far below
+	#the surface it descends gradually and joins it through a tunnel, instead of dropping in down a
+	#vertical shaft from the surface; and any stretch running deep under the ground gets a roof
+	#rather than an open canyon. A lowland river running as a tunnel under a mountain drains the
+	#mountain streams into itself; they reach it underground. Off = the old sheer drop, and
+	#mountain rivers ignore lowland tunnels. EXPERIMENTAL - still buggy. New chunks only.
+	mountainRiverTunnels = false
+	#How often a steep mountain stream breaks into a flat pool and a vertical waterfall.
+	#Wherever the ground itself breaks off there is a waterfall at every setting; the rest are
+	#cut into the stream's slope, never built up on it.
+	#CLIFFS = only where the ground breaks off; elsewhere a steep stream runs down as rapids.
+	#FEW    = a waterfall every 50-90 blocks of steep stream.
+	#NORMAL = every 20-40 blocks (default).
+	#MANY   = wherever the slope has room for one, every few blocks on a steep stream.
+	#New chunks only.
+	#Allowed Values: CLIFFS, FEW, NORMAL, MANY
+	mountainRiverWaterfalls = "NORMAL"
+	#Fill natural terrain depressions in the mountains with lakes, at whatever height the basin sits.
+	enableMountainLakes = true
+	#List of biome IDs that will be treated like oceans by Dynamic Waters: no river flow and no river carving.
+	#Use the full biome resource location, e.g. minecraft:warm_ocean or mymod:dead_sea.
+	#Supports wildcard suffixes when the entry ends with '*', e.g. mymod:*
+	biomeBlacklist = []
+	#Rounded boulders in the lowland rivers, along their shallows, and very rarely a rock in a
+	#mountain stream's rapids. New chunks only.
+	riverBoulders = true
+	#Lay riverbank palettes on the ground rivers (lowland and mountain) and lakes cut: the bed
+	#sorted by the current - gravel and cobbles where the water runs hard, sand, clay and silt
+	#where it slackens - spots of shingle, sand, roots or mud along the shore, sand and gravel bars
+	#inside the bends; each laid in spots on one ground, by the biome. A lowland river keeps its
+	#river biome but takes the palette of the land it runs through. The palettes are JSON files in
+	#config/dynamicwaters/riverbanks/; edit them in game (Riverbank palettes) or see the README
+	#there. New chunks only.
+	riverbankPalettes = true
+	#Plants in and along the rivers (lowland and mountain) and lakes: kelp in the lakes, seagrass
+	#in the mountain rivers and lakes, lily pads and reeds along calm water, a few sea pickles in
+	#warm waters - by the biome, a list for the lowland rivers, one for the mountain rivers and one
+	#for the lakes. The sets are JSON files in config/dynamicwaters/water_plants/; edit them in game
+	#(Water plants) or see the README there. Off = none of them. New chunks only.
+	waterPlants = true
+
+#River ambience.
+[Sounds]
+	#Enable the ambient flowing sound for rivers.
+	enableRiverSound = true
+
+#The welcome message, and compatibility with other mods.
+[General]
+	#Show the welcome message when joining the world.
+	showWelcomeMessage = true
+	#Automatically disable underground rivers from the Tectonic mod to improve performance and compatibility with Dynamic Waters.
+	disableTectonicUndergroundRivers = true

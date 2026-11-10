@@ -1,0 +1,13 @@
+name = "Hellim's Elytra Slot"
+filename = "hellims_elytra_slot-1.21.1-neoforge-0.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8b2c3d2a68317f14e3646a596d58760e350000f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8466736
+project-id = 1591206

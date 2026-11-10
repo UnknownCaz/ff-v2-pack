@@ -1,0 +1,13 @@
+name = "KubeJS Rechiseled"
+filename = "kubejs_rechiseled-1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OxbnEdxm/versions/Y2mqWetx/kubejs_rechiseled-1.0.jar"
+hash-format = "sha512"
+hash = "3daaf02f9917a911c02a141e57a3058fa9d9583a714b0b08a549bfc141625a2f74b9849d419a8c09e5e7219e74199a60e22f1655baed845c3554b2a16fa9992d"
+
+[update]
+[update.modrinth]
+mod-id = "OxbnEdxm"
+version = "Y2mqWetx"

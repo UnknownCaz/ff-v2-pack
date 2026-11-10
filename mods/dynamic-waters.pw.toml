@@ -1,0 +1,13 @@
+name = "Dynamic Waters: Realistic Flowing Rivers"
+filename = "dynamicwaters-13.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "01524b4af06cc17d7b5ef4be83d182513c5dd7ad"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9396870
+project-id = 1505834

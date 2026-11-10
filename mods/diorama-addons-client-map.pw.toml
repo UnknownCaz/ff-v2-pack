@@ -1,0 +1,13 @@
+name = "Diorama Addons: Client Map"
+filename = "diorama-addons-clientmap-1.21.1-0.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "15b2a53ccffc820c94d3b08b66ccd210a5302800"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9426487
+project-id = 1778718

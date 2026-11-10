@@ -1,0 +1,13 @@
+name = "Sophisticated Comforts Upgrade"
+filename = "sophisticated-comforts-upgrade-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "748af7f03a426f02842cac89cf01cbb841ae4b84"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9233350
+project-id = 1710043

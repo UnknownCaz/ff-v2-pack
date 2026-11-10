@@ -1,0 +1,13 @@
+name = "Starting Classes"
+filename = "starting_classes-1.0.14-1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "257b340d611b2eb2c0509aaef47019aab371593b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9051128
+project-id = 1579197

@@ -1,0 +1,23 @@
+{
+  "split_cooldown": false,
+  "positions": {
+    "neoorigins:cooldown_cluster": {
+      "xPct": 0.475,
+      "yPct": 0.9168242,
+      "scale": 1.0,
+      "vertical": false
+    },
+    "neoorigins:shulk_stamina": {
+      "xPct": 0.53229165,
+      "yPct": 0.8981481,
+      "scale": 1.0,
+      "vertical": false
+    },
+    "neoorigins:tamer_essence": {
+      "xPct": 0.40520832,
+      "yPct": 0.90925926,
+      "scale": 1.0,
+      "vertical": false
+    }
+  }
+}

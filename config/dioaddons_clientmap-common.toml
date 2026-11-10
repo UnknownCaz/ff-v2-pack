@@ -1,0 +1,35 @@
+[exploredMap]
+	#Shared explored map: DISABLED, GLOBAL (everyone shares one map) or GROUPS
+	#(each group of friends shares one; players without a group keep their own).
+	#Allowed Values: DISABLED, GLOBAL, GROUPS
+	mode = "GLOBAL"
+	#Explored chunks sent to each player per second while their map
+	#catches up. Each chunk is a few kilobytes.
+	# Default: 16
+	# Range: 1 ~ 512
+	chunksPerSecond = 16
+	#Chunks per network packet.
+	# Default: 8
+	# Range: 1 ~ 32
+	batchSize = 8
+
+[locations]
+	#Shared waypoints and player positions: DISABLED, GLOBAL or GROUPS.
+	#Allowed Values: DISABLED, GLOBAL, GROUPS
+	mode = "GROUPS"
+	#Ticks between player position updates (20 = one second).
+	# Default: 20
+	# Range: 5 ~ 200
+	playerUpdateTicks = 20
+	#Whether a player's position is shared until they choose otherwise
+	#(/maplocation show|hide).
+	defaultVisible = true
+	#Maximum shared waypoints in one pool (global, a group, or a player alone).
+	# Default: 200
+	# Range: 0 ~ 10000
+	maxWaypointsPerPool = 200
+
+[claims]
+	#Send land claims (name, owner, chunks) to clients when Diorama Addons: Claims is
+	#installed. Members and permissions are never sent.
+	showClaims = true

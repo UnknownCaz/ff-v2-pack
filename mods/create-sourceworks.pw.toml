@@ -1,0 +1,13 @@
+name = "Create: Sourceworks"
+filename = "create-sourceworks-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ef37c7b96714fcf8bc4d559f46aa29f43ecb480e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8925768
+project-id = 1703492

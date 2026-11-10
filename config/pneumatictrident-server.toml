@@ -1,0 +1,42 @@
+#Ticks to store one charge; matches Creator Sword's default Flywheel Mace charge time.
+# Default: 80
+# Range: 10 ~ 1200
+chargeTicks = 80
+#Backtank air consumed per charge. Boost requires the full cost.
+# Default: 20
+# Range: 1 ~ 10000
+airPerCharge = 20
+#Cooldown after a powered throw, in ticks.
+# Default: 40
+# Range: 0 ~ 1200
+boostCooldownTicks = 40
+#Additional velocity multiplier per charge.
+# Default: 0.4
+# Range: 0.0 ~ 2.0
+speedBonusPerCharge = 0.4
+#Uncharged projectile and Riptide damage. Creator's Netherite Sword deals 10 total melee damage.
+# Default: 10.0
+# Range: 1.0 ~ 40.0
+baseProjectileDamage = 10.0
+#Extra damage per charge; full Overdrive reaches 12 base damage.
+# Default: 1.0
+# Range: 0.0 ~ 20.0
+balancedImpactDamagePerCharge = 1.0
+#Cooldown after a charged underwater dash, in ticks.
+# Default: 80
+# Range: 20 ~ 1200
+underwaterDashCooldownTicks = 80
+#Speed of the underwater dash. Requires one stored charge and backtank air.
+# Default: 1.2
+# Range: 0.1 ~ 3.0
+underwaterDashSpeed = 1.2
+#Slowness I duration after a charged projectile deals damage. Zero disables it.
+# Default: 40
+# Range: 0 ~ 200
+undertowDurationTicks = 40
+#Charged hits against submerged targets emit a non-damaging Guardian Pulse.
+guardianPulseEnabled = true
+#Guardian Pulse radius. Only submerged hostile mobs in sight are affected; allies are excluded.
+# Default: 3.0
+# Range: 1.0 ~ 6.0
+guardianPulseRadius = 3.0

@@ -1,0 +1,57 @@
+[limits]
+	#Maximum number of chunks a player can own, across all of their claims.
+	#Being a member of other players' claims does not count.
+	# Default: 100
+	# Range: 0 ~ 1000000
+	maxChunksPerPlayer = 100
+	#Maximum number of separate claims a player can own.
+	# Default: 10
+	# Range: 0 ~ 10000
+	maxClaimsPerPlayer = 10
+	#If true, the chunks of one claim must share an edge, and releasing a
+	#chunk that would split a claim in two is refused.
+	requireContiguous = true
+	#Minimum distance in chunks between a claimed chunk and the overworld
+	#spawn chunk. 0 disables the check.
+	# Default: 0
+	# Range: 0 ~ 10000
+	minSpawnDistance = 0
+	#Maximum number of friends that can be added to one claim.
+	# Default: 32
+	# Range: 0 ~ 1000
+	maxMembersPerClaim = 32
+
+[defaults]
+	#Public permissions given to newly created claims.
+	#Valid values: break_blocks, place_blocks, interact_blocks, open_containers, use_items, interact_entities, damage_animals, trample_farmland, pvp, explosions, fire_spread, mob_griefing
+	defaultPublicPermissions = []
+
+[misc]
+	#Largest grid radius (in chunks) a client may request and edit from the GUI.
+	#Chunks further than this from the player are rejected by the server.
+	# Default: 16
+	# Range: 2 ~ 64
+	guiMaxRadius = 16
+	#Permission level required for /claims admin commands and bypass.
+	# Default: 2
+	# Range: 0 ~ 4
+	adminPermissionLevel = 2
+	#Minimum ticks between two 'you cannot do that here' messages
+	#sent to the same player.
+	# Default: 40
+	# Range: 0 ~ 1200
+	denialMessageCooldownTicks = 40
+
+[greetings]
+	#Owners can set a welcome and a farewell notification for their claims, and a
+	#visitor alarm. If false, nothing is shown or sent (the settings are kept).
+	enabled = true
+	#How welcome and farewell notifications are shown: TITLE (title and subtitle
+	#in the middle of the screen), ACTION_BAR (above the hotbar) or CHAT. All work on vanilla clients.
+	#Allowed Values: TITLE, ACTION_BAR, CHAT
+	display = "TITLE"
+	#The visitor alarm tells about the same visitor in the same claim at most
+	#once in this many seconds.
+	# Default: 120
+	# Range: 0 ~ 86400
+	alarmCooldownSeconds = 120

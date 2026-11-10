@@ -1,0 +1,13 @@
+name = "KubeJSable"
+filename = "kubejsable-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "389ce9c541ace0130aa9f62044784f09c5335e7d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8036070
+project-id = 1529432

@@ -1,0 +1,13 @@
+name = "Better Trims"
+filename = "bettertrims-4.0.4+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a890e4d8125f96d20c366551ae614f158d80eee2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7327918
+project-id = 821752

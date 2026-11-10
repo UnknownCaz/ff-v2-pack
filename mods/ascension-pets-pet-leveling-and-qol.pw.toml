@@ -1,0 +1,13 @@
+name = "Ascension Pets :  Pet Leveling and QOL"
+filename = "ascensionpets-1.11.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d8577068d7bc293e3cb8e6016af39d71db82ea29"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9336349
+project-id = 1729427

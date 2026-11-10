@@ -1,0 +1,13 @@
+name = "Dungeon Difficulty"
+filename = "dungeon_difficulty-neoforge-3.9.2+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "497d435a6be412defe8aabaf391dbfd3e98d7a87"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9110961
+project-id = 645559

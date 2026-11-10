@@ -1,0 +1,13 @@
+name = "XaeroHeadTracker"
+filename = "XaeroHeadTracker-2.3.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4cab76d0e2a67d79d3b5edff24c850acb18174e8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9483833
+project-id = 1597062

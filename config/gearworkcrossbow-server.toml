@@ -1,0 +1,12 @@
+#Hold a loaded crossbow this many ticks for a full flywheel shot.
+# Default: 20
+# Range: 5 ~ 200
+flywheelSpinTicks = 20
+#Fully spun arrow velocity multiplier. Arrow base damage is compensated to avoid a matching damage increase; fireworks retain normal speed.
+# Default: 1.35
+# Range: 1.0 ~ 2.0
+flywheelVelocityMultiplier = 1.35
+#Loading duration relative to a vanilla crossbow; Quick Charge still applies.
+# Default: 0.8
+# Range: 0.25 ~ 1.0
+loadingDurationMultiplier = 0.8
