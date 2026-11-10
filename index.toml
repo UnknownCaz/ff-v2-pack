@@ -986,7 +986,7 @@ hash = "f6df47d3f1002fde8d9e59c8068acbc39e976b3392e8fd528dc9b38b2856c5a0"
 
 [[files]]
 file = "config/connectivity.json"
-hash = "cb20491983041d580526140e579cc7e04c390e07a4e6d907af9f853c6b80dee8"
+hash = "f93aa3caa684a29562ebde0b983e83f2a1e1730d2cb93bea9e6721541c195586"
 
 [[files]]
 file = "config/copycats-client.toml"
